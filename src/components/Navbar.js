@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import  { Link, NavLink} from 'react-router-dom';
+import InovationsForm from '../components/InovationsForm';
+// import ModalBootstrap from '../ModalBootstrap';
 
 class Navbar extends Component {
     constructor(props) {
@@ -51,7 +53,7 @@ class Navbar extends Component {
                         <NavLink className='text text-bold m-4 card-line navlink' to="/prostor za nastani" onClick={() => {this.fromOutsite();this.unCheck()}}>ПРОСТОР ЗА НАСТАНИ</NavLink> 
                         <NavLink className='text text-bold m-4 card-line navlink' to="/partnertsva" onClick={() => {this.fromOutsite();this.unCheck()}}>ПАРТНЕРСТВА</NavLink> 
 
-
+                       {/* <ModalBootstrap handleClose={this.closeModal} isOpen={this.state.isOpen} handleSubmit={this.handleSubmit} > <InovationsForm></ModalBootstrap> :null} */}
                         <button className="black-button-navbar ml-lg-auto main-button" onClick={this.openModal}> + ПРИКЛУЧИ СЕ</button>
                     
                     

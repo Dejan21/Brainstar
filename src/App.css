@@ -42,6 +42,9 @@
   width: 50px;
   height: 50px;
 }
-.img{
-  position: left;
+.img-left{
+position: left;
+align-self: flex-end;
+justify-content: left;
+
 };

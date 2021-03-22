@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
+import {IoArrowForward} from 'react-icons/io5';
+import InovationsForm from './components/InovationsForm';
 
 import React from 'react';
 
