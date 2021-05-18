@@ -10,7 +10,7 @@ function SectionImageRight ({title,img, children,id, content}) {
 {children}             
 </div>
                 <div className='col '>
-                    <img className='img-left' src={require('../assets/edukacija1.jpg')} style={{height:'100%', width:'100%'}} />
+                    <img className='img-left' src={require('../../assets/edukacija1.jpg')} style={{height:'100%', width:'100%'}} />
                      </div>
                  
             </div>

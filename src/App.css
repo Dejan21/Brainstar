@@ -39,12 +39,16 @@
   position: left;
 }
 .img{
+position: absolute;
   width: 50px;
   height: 50px;
-}
-.img-left{
-position: left;
-align-self: flex-end;
-justify-content: left;
-
-};
+  float: left;
+ }
+ .container{
+position: absolute;
+float: left;
+ }
+ #coworking{
+   position: absolute;
+   float: left;
+ }

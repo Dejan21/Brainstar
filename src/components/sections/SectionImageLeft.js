@@ -1,12 +1,12 @@
 import React from 'react';
 
-function SectionImageLeft ({title,img, children,id, content}) {
+function SectionImageLeft ({title,image, children,id, content}) {
     return (
-        <div className="container-fluid my-5" id={id}>
-            <div className='row'>
+        <div className="container" id={id}>
+            <div className='flex-row '>
 
-            <div className='col-lg-7 col-md-12 col-sm-12 col-12' >
-                    <img className='img-left' src={require(`../assets/${img}.jpg`).default} style={{height:'100%', width:'100%'}} />
+            <div className='col-lg-7 col-md-12 col-sm-12 col-12 align-items-left' >
+                    <img variant='left' src={require(`../../assets/coworking.jpg`)} style={{height:'100%', width:'100%'}} />
                      </div>
                 
                 <div className='col-lg-7 col-md-12 col-sm-12 col-12 align-self-center text text-linetrough'>

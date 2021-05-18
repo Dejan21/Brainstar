@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import Banner from '../components/Banner';
+import React, { PureComponent } from 'react';
+import Banner from '../components/sections/Banner';
 import CardsContainer from '../components/CardsContainer';
-import SingleCard from '../components/SingleCard';
+
 import { Popover, OverlayTrigger } from 'react-bootstrap';
-import { NavLink, Link as NLink } from 'react-router-dom';
+import { NavLink, Link  } from 'react-router-dom';
 import SecondCard from '../components/SecondCard';
-import SectionImageRight from '../components/SectionImageRight';
+import SectionImageRight from '../components/sections/SectionImageRight';
 import { Button } from 'react-bootstrap';
-import SectionImageLeft from '../components/SectionImageRight';
+import SectionImageLeft from '../components/sections/SectionImageRight';
 import { Element } from 'react-scroll';
-import InovationsForm from '../components/InovationsForm';
 import { IoArrowUpOutline } from 'react-icons/io5'
 import {IoArrowForward} from 'react-icons/io5';
+import BottomBanner from '../components/sections/BottomBanner';
 
-class HomePage extends Component {
+class HomePage extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {
@@ -90,8 +90,8 @@ class HomePage extends Component {
                                 < div className="col-lg-4 col-md-6 col-sm-12 col-12  "  >
                                     {/* < NavLink className="card-link" target="_blank" rel="noreferrer" href="https://brainster.co" > */}
                                     < SecondCard img='prostor za nastani' title="Простор за настани" />
-                                    {/* </NavLink> */}
-                                </div>
+                                     {/* </NavLink> */}
+                                 </div>
 
                                 < div className="col-lg-4 col-md-6 col-sm-12 col-12  "  >
                                     {/* < NavLink className="card-link" target="_blank" rel="noreferrer" href="https://brainster.co" > */}
@@ -135,22 +135,27 @@ class HomePage extends Component {
                             </div>
 
 
-                            <Element id="#coworking" name="#coworking">
-                            <SectionImageLeft title="Coworking" img="coworking" className='img-left' content="Биди дел од tech заедницата на иноватори, креативци и претприемачи. Резервирај стол во нашата shared office. Пичирај го твојот бизнис и нашиот тим заедно ке одлучи секој месец со кого да ги дели своите канцеларии.">
+                            </CardsContainer>
+
+                 <div className='flex-row align-items-start'>
+                        <Element id="#coworking" name="#coworking">
+                            <SectionImageLeft title="Coworking" image="#coworking" variant='left' content="Биди дел од tech заедницата на иноватори, креативци и претприемачи. Резервирај стол во нашата shared office. Пичирај го твојот бизнис и нашиот тим заедно ке одлучи секој месец со кого да ги дели своите канцеларии.">
                                 <OverlayTrigger trigger="click" placement="bottom"
                                     overlay={popover}>
                                     <button className="black-button mr-2 p-2 text-linetrough btn-linetrough mb-md-2 mb-sm-2 mb-2">РЕЗЕРВИРАЈ МЕСТО</button>
                                 </OverlayTrigger>
                             </SectionImageLeft>
                          </Element>
-                        </CardsContainer>
+                         </div>
 
                         <SectionImageRight img='prostor_za_nastani '  title="ПРОСТОР ЗА НАСТАНИ" content='Можност за презентации, обуки, конференции, networking настани. Одбери ја просторијата која најмногу ќе одговара на твојата идеја. Го задржуваме правото да одбереме кој настан ќе се организира го нашиот Brainster Space'>
                           
                             <Button className='black-btn mb-md-2 mb-sm-2 p-2 primaryon' onClick={this.setAcademiesProps}>АКАДЕМИИ</Button>
                         </SectionImageRight>
 
-
+<BottomBanner title="Партнери" content="Имаш идеја? Отворени сме за соработка">
+<button variant ='black-button p-5 mt-5'>ВИДИ ГО ПРОСТОРОТ</button>
+</BottomBanner>
 
                     </div>
                 </div>
